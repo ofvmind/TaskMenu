@@ -1,0 +1,49 @@
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 1);
+    font-size: 30px;
+    z-index: 1;
+  }
+
+  @keyframes show {
+    0% {
+      transform: scale(8);
+    }
+  }
+  
+  @media (max-width: 576px) {
+
+    .header__nav-list {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__nav-item {
+      font-size: 12px;
+    }
+
+    .marker {
+      display: none;
+      position: fixed;
+      top: 13px;
+      width: 13px;
+      height: 12px;
+      background-color: red;
+      border-radius: 50%;
+      animation: show .5s;
+    }
+
+    .marker.active {
+      display: initial;
+    }
+
+  }

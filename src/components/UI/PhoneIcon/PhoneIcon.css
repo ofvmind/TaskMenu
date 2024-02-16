@@ -1,0 +1,18 @@
+.icon {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000;
+    animation: call .2s infinite linear;
+    margin-left: 10px;
+}
+
+@keyframes call {
+    from {
+      margin-top: 5px;
+    }
+    to {
+        margin-bottom: 5px;
+    }
+}
