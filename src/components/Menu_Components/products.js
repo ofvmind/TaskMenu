@@ -14,12 +14,21 @@ import pizzaGAVAY from "../../images/menu_imgs/pizzaGAVAY.webp";
 
 //Соки
 import juiceApple from "../../images/menu_imgs/juiceApple.jpg";
+import orangeJuice from "../../images/menu_imgs/orangeJuice.jpg";
+import cherryJuice from "../../images/menu_imgs/cherryJuice.jpg";
+import pineappleJuice from "../../images/menu_imgs/pineappleJuice.jpg";
 
 //Вина
 import wineBolgrad from "../../images/menu_imgs/wineBolgtad.jpg";
+import whiteWine from "../../images/menu_imgs/whiteWine.jpg";
+import redWine from "../../images/menu_imgs/wineRed.jpg";
+import kabarneWine from "../../images/menu_imgs/wineKabarne.png";
 
 //Міцний алкоголь
 import vodkaHortica from "../../images/menu_imgs/horticaVodka.jpeg";
+import vodkaCosack from "../../images/menu_imgs/vodkaCosack.jpg";
+import viskiJameson from "../../images/menu_imgs/viskiJameson.jpg";
+import viskiJack from "../../images/menu_imgs/viskiJack.jpg";
 
 export const cocktail = [
     {id: 1, title: "Мохіто", price: 110, image: mojito, type: "cocktail", quantity: "350ml"},
@@ -39,18 +48,21 @@ export const pizza = [
 
 export const juice = [
     {id: 1, title: "Сік яблучний", price: 85, image: juiceApple, type: "juice", quantity: "1000ml"},
+    {id: 2, title: "Сік апельсиновий", price: 90, image: orangeJuice, type: "juice", quantity: "1000ml"},
+    {id: 3, title: "Сік вишневий", price: 80, image: cherryJuice, type: "juice", quantity: "1000ml"},
+    {id: 4, title: "Сік ананасовий", price: 95, image: pineappleJuice, type: "juice", quantity: "1000ml"},
 ];
 
 export const strongAlco = [
-    {id: 1, title: "Водка Хортиця", price: 150, image: vodkaHortica, type: "drinks", quantity: "500ml"},
-    {id: 2, title: "Водка Хортиця", price: 150, image: vodkaHortica, type: "drinks", quantity: "500ml"},
-    {id: 3, title: "Водка Хортиця", price: 150, image: vodkaHortica, type: "drinks", quantity: "500ml"},
-    {id: 4, title: "Водка Хортиця", price: 150, image: vodkaHortica, type: "drinks", quantity: "500ml"},
+    {id: 1, title: "Горілка Хортиця", price: 150, image: vodkaHortica, type: "drinks", quantity: "500ml"},
+    {id: 2, title: "Козацька Рада", price: 150, image: vodkaCosack, type: "drinks", quantity: "500ml"},
+    {id: 3, title: "Віскі JackDaniels", price: 799, image: viskiJack, type: "drinks", quantity: "500ml"},
+    {id: 4, title: "Віскі Jameson", price: 1000, image: viskiJameson, type: "drinks", quantity: "500ml"},
 ];
 
 export const wine = [
     {id: 1, title: "Червоне Bolgrad", price: 150, image: wineBolgrad, type: "wine", quantity: "750ml"},
-    {id: 2, title: "Червоне Bolgrad", price: 150, image: wineBolgrad, type: "wine", quantity: "750ml"},
-    {id: 3, title: "Червоне Bolgrad", price: 150, image: wineBolgrad, type: "wine", quantity: "750ml"},
-    {id: 4, title: "Червоне Bolgrad", price: 150, image: wineBolgrad, type: "wine", quantity: "750ml"},
+    {id: 2, title: "Біле Вино", price: 200, image: whiteWine, type: "wine", quantity: "750ml"},
+    {id: 3, title: "Червоне Вино", price: 200, image: redWine, type: "wine", quantity: "750ml"},
+    {id: 4, title: "Кабарне", price: 185, image: kabarneWine, type: "wine", quantity: "750ml"},
 ];

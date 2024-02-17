@@ -37,18 +37,18 @@ function Menu() {
         <p>Піцца</p>
       </div>
       <div
-        onClick={focusOn.bind(null, drinksRef)}
-        style={{ backgroundImage: `url(${cocktail[5].image})` }}
-        className="present"
-      >
-        <p>Коктейлі</p>
-      </div>
-      <div
         onClick={focusOn.bind(null, juiceRef)}
         style={{ backgroundImage: `url(${juice[0].image})` }}
         className="present"
       >
         <p>Соки</p>
+      </div>
+      <div
+        onClick={focusOn.bind(null, drinksRef)}
+        style={{ backgroundImage: `url(${cocktail[5].image})` }}
+        className="present"
+      >
+        <p>Коктейлі</p>
       </div>
       <div
         onClick={focusOn.bind(null, strongAlcoRef)}
@@ -65,8 +65,8 @@ function Menu() {
         <p>Вина</p>
       </div>
       <MenuList tabIndex={4} refer={pizzaRef} products={pizza} title="Піцца" img={Pizza} />
-      <MenuList tabIndex={5} refer={drinksRef} products={cocktail} title="Коктейлі" img={Cocktails}/>
       <MenuList tabIndex={6} refer={juiceRef} products={juice} title="Соки" img={Juice}/>
+      <MenuList tabIndex={5} refer={drinksRef} products={cocktail} title="Коктейлі" img={Cocktails}/>
       <MenuList tabIndex={7} refer={strongAlcoRef} products={strongAlco} title="Міцний Алкоголь" img={Strong}/>
       <MenuList tabIndex={8} refer={wineRef} products={wine} title="Вина" img={Wine}/>
     </div>
