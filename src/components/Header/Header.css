@@ -1,17 +1,10 @@
 .header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     display: flex;
-    padding: 0 20px;
     align-items: center;
-    justify-content: space-between;
-    height: 75px;
+    flex-direction: column;
+    padding: 20px;
     background-color: rgba(0, 0, 0, 1);
     font-size: 30px;
-    z-index: 1;
   }
 
   @keyframes show {
@@ -22,21 +15,43 @@
   
   @media (max-width: 576px) {
 
+    .header__nav {
+      margin-bottom: 25px;
+    }
+
     .header__nav-list {
         display: flex;
+        gap: 0px;
         align-items: center;
     }
 
     .header__nav-item {
-      font-size: 12px;
+      font-size: 20px;
+      font-family: sans-serif;
+      p {
+        margin: 0 35px;
+      }
+    }
+
+    .basket__div {
+      display: none;
+      position: fixed;
+      top: 130px;
+      right: 10px;
+      z-index: 1;
+    }
+
+    .basket__div.active {
+      display: initial;
     }
 
     .marker {
       display: none;
-      position: fixed;
-      top: 13px;
-      width: 13px;
-      height: 12px;
+      position: absolute;
+      top: 0px;
+      right: 0;
+      width: 20px;
+      height: 20px;
       background-color: red;
       border-radius: 50%;
       animation: show .5s;

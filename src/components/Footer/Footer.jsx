@@ -5,12 +5,12 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer__row">
-        <p>Awesome Footer</p>
-        <p>2024</p>
         <div className="footer__row-logo">
           <p>Powered By</p>
           <Logo />
         </div>
+        <p>Awesome Footer</p>
+        <p>2024</p>
       </div>
     </div>
   );

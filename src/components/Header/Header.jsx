@@ -6,24 +6,40 @@ import "./Header.css";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { BackButton } from "../UI/BackButton/BackButton";
+import { Modal } from "../UI/Modal/Modal";
+import { BasketWindow } from "../Basket_Components/BasketWiindow";
+import { Brand } from "../UI/Restoran_Brand/Brand";
 
 export default function Header() {
-    const purchase = useSelector( state => state.purchase.purchase );
-    const [menuPage, setMenuPage] = useState(true);
+  const purchase = useSelector((state) => state.purchase.purchase);
+  const [isBasketOpen, setIsBasketOpen] = useState(false);
 
-    return (
-        <div className="header">
+  return (
+    <div className="header">
+      <nav className="header__nav">
+        <ul className="header__nav-list">
+          <li className="header__nav-item">
             <BurgerMenu />
-            { menuPage 
-              ?  <Link to="/basket" onClick={() => setMenuPage(false)}><div className={ purchase.length ? "marker active" : "marker" }/><BasketIcon /></Link>
-              :  <Link to="/" onClick={() => setMenuPage(true)}><BackButton /></Link>
-            }
-            <nav className="header__nav">
-                <ul className="header__nav-list">
-                    <li className="header__nav-item">+38(097)-XXX-XX-XX</li>
-                    <li className="header__nav-item"><PhoneIcon /></li>
-                </ul>
-            </nav>
-        </div>
-    );
+          </li>
+          <li className="header__nav-item">
+            <p>+38(097)-XXX-XX-XX</p>
+          </li>
+          <li className="header__nav-item">
+            <PhoneIcon />
+          </li>
+        </ul>
+      </nav>
+      <Brand />
+      <div
+        onClick={() => setIsBasketOpen(true)}
+        className={purchase.length ? "basket__div active" : "basket__div"}
+      >
+        <div className={purchase.length ? "marker active" : "marker"} />
+        <BasketIcon />
+      </div>
+      <Modal visible={isBasketOpen} setVisible={setIsBasketOpen}>
+        <BasketWindow />
+      </Modal>
+    </div>
+  );
 }

@@ -14,20 +14,20 @@
     .footer__row-logo {
       display: flex;
       align-items: center;
-      margin-top: 20px;
+      margin-bottom: 20px;
       gap: 20px;
       p {
         font-size: 30px;
       }
     }
-    p:nth-child(1) {
-      font-size: 35px;
-      padding-bottom: 10px;
-    }
     p:nth-child(2) {
-      padding-top: 10px;
+      font-size: 35px;
+      padding-bottom: 20px;
+    }
+    p:nth-child(3) {
+      padding-top: 20px;
       width: 250px;
-      border-top: 10px double #fff;
+      border-top: 15px double rgba(29, 29, 29, 1);
       font-size: 30px;
     }
 }
