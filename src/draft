@@ -1,0 +1,68 @@
+.bar__menu__table {
+    margin: 10px 0 50px 0;
+    outline: none;
+    width: 100vw;
+    .table__product__name {
+      font-family: 'Lobster', cursive;
+    }
+    .row__product:nth-child(even) {
+      background-color: rgba(224, 158, 81, 0.5);
+    }
+    th, td {
+      font-size: 20px;
+      padding: 20px 5px;
+      text-align: center;
+    }
+    .table__row {
+      .table__header {
+        font-size: 25px;
+      }
+    }
+    td:nth-child(2),
+    td:nth-child(3) {
+      font-weight: bold;
+    }
+   
+  }
+
+
+  function Menu_Table_Item({ item }) {
+    return (
+      <tr className="row__product">
+        <td className="table__product__name">{ item.title }</td>
+        <td className="color">{ item.half } грн</td>
+        <td className="last__td">{ item.full } грн</td>
+      </tr>
+    );
+  }
+  
+  export default Menu_Table_Item;
+
+  import Menu_Table_Item from "./Menu_Table_Item";
+
+function Menu_Table_List({ products, refer, title, img, ...props }) {
+  return (
+    <>
+      <div
+        className="products-title"
+        style={{ backgroundImage: `url(${img})` }}
+      >
+        <p>{title}</p>
+      </div>
+      <div className="products">
+        <table className="bar__menu__table" {...props} ref={refer}>
+          <tr className="table__row">
+            <th className="table__header">Назва</th>
+            <th className="table__header">50ml</th>
+            <th className="table__header">100ml</th>
+          </tr>
+          {products.map((item) => (
+            <Menu_Table_Item key={item.id} item={item} />
+          ))}
+        </table>
+      </div>
+    </>
+  );
+}
+
+export default Menu_Table_List;

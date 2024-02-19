@@ -1,4 +1,6 @@
 import { Logo } from "../UI/Logo/Logo";
+import { Brand } from "../UI/Restoran_Brand/Brand";
+import { Footer__Brand } from "../UI/Restoran_Brand/Footer__Brand";
 import "./Footer.scss";
 
 function Footer() {
@@ -6,11 +8,15 @@ function Footer() {
     <div className="footer">
       <div className="footer__row">
         <div className="footer__row-logo">
+          <Footer__Brand />
+        </div>
+        <div className="footer__row-technology">
           <p>Powered By</p>
           <Logo />
+          <span>React</span>
         </div>
-        <p>Awesome Footer</p>
-        <p>2024</p>
+        <p className="corp">MenuSTORE ltd</p>
+        <p className="year">2024</p>
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ export default function Header() {
             <p>+38(097)-XXX-XX-XX</p>
           </li>
           <li className="header__nav-item">
-            <PhoneIcon />
+            <a href="tel: +38(097)-XXX-XX-XX"><PhoneIcon /></a>
           </li>
         </ul>
       </nav>

@@ -66,3 +66,17 @@ export const wine = [
     {id: 3, title: "Червоне Вино", price: 200, image: redWine, type: "wine", quantity: "750ml"},
     {id: 4, title: "Кабарне", price: 185, image: kabarneWine, type: "wine", quantity: "750ml"},
 ];
+
+//Таблицы (бар-меню);
+
+export const bar_menu = [
+    {id: 1, title: "Горілка Green Day", half: "40", full: "80"},
+    {id: 2, title: "Горілка Хортиця", half: "40", full: "80"},
+    {id: 3, title: "Горілка Козацька Рада", half: "40", full: "80"},
+    {id: 4, title: "Настойка Вишнева", half: "40", full: "80"},
+    {id: 5, title: "Джин", half: "80", full: "160"},
+    {id: 6, title: "Віскі JackDaniels", half: "80", full: "160"},
+    {id: 7, title: "Віскі Jameson", half: "80", full: "160"},
+    {id: 8, title: "Текіла Coronado", half: "70", full: "180"},
+    {id: 9, title: "Абсент Xenta Ansenta", half: "90", full: "180"}
+];
