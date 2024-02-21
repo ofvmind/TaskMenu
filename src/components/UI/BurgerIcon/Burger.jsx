@@ -1,4 +1,4 @@
-import icon from "../../../images/icons/Hamburger_icon.svg.png";
+import icon from "../../../images/icons/burger2.png";
 import "./Burger.css";
 
 export const BurgerMenu = () => {

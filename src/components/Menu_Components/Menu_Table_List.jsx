@@ -14,7 +14,7 @@ function Menu_Table_List({ products, refer, title, img, ...props }) {
       <div className="products">
         <div className="decor__line"/>
         <div className="bar__menu">
-          <div><Footer__Brand style={{width: 175, marginTop: 20}}/></div>
+          <p className="intro__bar">Bar Menu</p>
           <DecorList />
           <ul {...props} ref={refer} className="bar__menu-list">
             <li className="bar__menu__list-item">
@@ -28,7 +28,7 @@ function Menu_Table_List({ products, refer, title, img, ...props }) {
               <Menu_Table_Item key={item.id} item={item} />
             ))}
           </ul>
-          <p style={{fontSize: 50}}>...</p>
+          <p className="ending__list">...</p>
         </div>
         <div className="decor__line"/>
       </div>

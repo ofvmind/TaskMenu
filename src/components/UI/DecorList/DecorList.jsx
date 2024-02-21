@@ -1,4 +1,4 @@
-import decor from "../../../images/decorations/lines.jpg";
+import decor from "../../../images/decorations/decor.svg";
 import "./DecorList.css";
 
 export const DecorList = () => (

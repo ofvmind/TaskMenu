@@ -22,7 +22,7 @@ export default function Header() {
             <BurgerMenu />
           </li>
           <li className="header__nav-item">
-            <p>+38(097)-XXX-XX-XX</p>
+            <p>+38 (097)-XXX-XX-XX</p>
           </li>
           <li className="header__nav-item">
             <a href="tel: +38(097)-XXX-XX-XX"><PhoneIcon /></a>

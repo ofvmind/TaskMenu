@@ -1,8 +1,5 @@
 .burger {
     width: 45px;
-    height: 45px;
-    background-color: #fff;
-    border-radius: 50%;
     padding: 5px;
     cursor: pointer;
 }
