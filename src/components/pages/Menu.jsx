@@ -1,4 +1,4 @@
-import { createRef, useEffect, useRef } from "react";
+import { createRef, useContext, useEffect, useRef } from "react";
 import MenuList from "../Menu_Components/MenuList";
 import {
   cocktail,
@@ -17,8 +17,12 @@ import Juice from "../../images/titles/juice.jpg";
 import Wine from "../../images/titles/wine.jpg";
 import BarMenu from "../../images/titles/BarMenu.jpg";
 import Menu_Table_List from "../Menu_Components/Menu_Table_List";
+import { Context } from "../../Context/Context";
 
 function Menu() {
+
+  const { isBarHidden, setIsBarHidden } = useContext(Context);
+
   const drinksRef = useRef();
   const pizzaRef = useRef();
   const juiceRef = useRef();
@@ -31,7 +35,7 @@ function Menu() {
   }
 
   return (
-    <div className="menu">
+    <div className="menu" onClick={() => setIsBarHidden(true)}>
       <p className="intro__title">Меню заклада</p>
       <div
         onClick={focusOn.bind(null, pizzaRef)}

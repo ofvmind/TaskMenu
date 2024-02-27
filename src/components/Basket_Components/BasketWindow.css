@@ -1,0 +1,23 @@
+.purchase {
+  margin: 50px 0 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.purchase__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  p {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 20px;
+  }
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  .cancel__purchase {
+    margin-right: 90px;
+  }
+}

@@ -12,6 +12,7 @@
     align-items: center;
     text-align: center;
     font-family: sans-serif;
+    opacity: .7;
     .footer__row-logo {
       display: flex;
       justify-content: center;
@@ -38,7 +39,6 @@
       font-weight: bold;
       letter-spacing: 4px;
       font-family: 'Lobster', cursive;
-      opacity: .7;
     }
    .year {
       margin-top: 50px;

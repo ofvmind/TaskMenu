@@ -61,4 +61,27 @@
       display: initial;
     }
 
+    .burger_menu {
+      position: fixed;
+      top: 80px;
+      left: -200px;
+      height: 215px;
+      width: 200px;
+      background-color: rgba(0, 0, 0, 1);
+      transition: .5s;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 20px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .burger__menu-logo {
+        margin-top: 25px;
+      }
+    }
+
+    .burger_menu.active {
+      transform: translateX(100%);
+    }
+
   }
