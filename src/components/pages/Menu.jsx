@@ -31,7 +31,10 @@ function Menu() {
   const barMenuRef = useRef();
 
   function focusOn(ref) {
-    ref.current.focus();
+    window.scrollTo({
+      top: ref.current.offsetTop,
+      behavior: "smooth"
+    });
   }
 
   return (

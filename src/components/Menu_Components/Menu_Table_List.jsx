@@ -11,12 +11,12 @@ function Menu_Table_List({ products, refer, title, img, ...props }) {
       >
         <p>{title}</p>
       </div>
-      <div className="products">
+      <div {...props} ref={refer} className="products">
         <div className="decor__line"/>
         <div className="bar__menu">
           <p className="intro__bar">Bar Menu</p>
           <DecorList />
-          <ul {...props} ref={refer} className="bar__menu-list">
+          <ul className="bar__menu-list">
             <li className="bar__menu__list-item">
               <p style={{fontSize: 33}} className="list__item-title">Назва</p>
               <div className="bar__menu__options-item">
